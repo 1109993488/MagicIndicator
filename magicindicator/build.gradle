@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
 
 android {
     compileSdkVersion 'android-P'
@@ -19,4 +20,13 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:28.0.0-alpha1'
+}
+
+publish {
+    userOrg = '1109993488'
+    groupId = 'com.github.hackware1993'
+    artifactId = 'MagicIndicator'
+    publishVersion = '1.5.1'
+    desc = 'MagicIndicator'
+    website = 'https://github.com/1109993488/MagicIndicator'
 }

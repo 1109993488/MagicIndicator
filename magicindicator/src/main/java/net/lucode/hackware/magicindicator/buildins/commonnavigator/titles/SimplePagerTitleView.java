@@ -3,6 +3,7 @@ package net.lucode.hackware.magicindicator.buildins.commonnavigator.titles;
 import android.content.Context;
 import android.graphics.Paint;
 import android.graphics.Rect;
+import android.support.v7.widget.AppCompatTextView;
 import android.text.TextUtils;
 import android.view.Gravity;
 import android.widget.TextView;
@@ -16,7 +17,7 @@ import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.IMeasurab
  * 博客: http://hackware.lucode.net
  * Created by hackware on 2016/6/26.
  */
-public class SimplePagerTitleView extends TextView implements IMeasurablePagerTitleView {
+public class SimplePagerTitleView extends AppCompatTextView implements IMeasurablePagerTitleView {
     protected int mSelectedColor;
     protected int mNormalColor;
 
